@@ -10,7 +10,7 @@ import java.nio.charset.*;
 public class WeatherService {
 
 
-    public String service(String city) throws IOException {
+    public static String service(String city) throws IOException {
         URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + city +"&appid=02e00071281cb2afed10f21f6f80e12e");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
