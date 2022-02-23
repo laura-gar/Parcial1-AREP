@@ -58,7 +58,8 @@ public class Server {
                 out.println(outputLine);
 
             } else {
-                outputLine = searchCity();
+                String city = file.split("=")[1];
+                outputLine = searchCity(city);
             }
             out.println(outputLine);
 
